@@ -1,3 +1,3 @@
 User-agent: *
 Allow: /
-Sitemap: https://qayyumjelah.github.io/opened/sitemap.xml
+Sitemap: https://qayyumjelah.github.io/opened-browser/sitemap.xml
