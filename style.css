@@ -65,9 +65,11 @@ footer a:hover { text-decoration: underline; }
 .card .note { font-size: 16px; color: var(--muted); margin: 0; }
 .card .note a { color: var(--green); font-weight: 700; }
 
+@media (max-width: 1000px) {
+  .steps .bar { display: none; }
+  .steps { flex-direction: column; align-items: flex-start; gap: 14px; }
+}
 @media (max-width: 640px) {
   .hero { padding: 56px 0 80px; }
   .card { padding: 36px 26px; }
-  .steps .bar { display: none; }
-  .steps { flex-direction: column; align-items: flex-start; gap: 14px; }
 }
