@@ -89,3 +89,76 @@ footer a:hover { text-decoration: underline; }
   .hero { padding: 56px 0 80px; }
   .card { padding: 36px 26px; }
 }
+
+/* Oaken identity: sharp serif display, forest glass panels. */
+h1, h2, h3, .brand span {
+  font-family: 'Sitka Banner', 'Sitka Text', Cambria, Georgia, serif;
+  letter-spacing: .01em;
+}
+
+.features {
+  padding: 22px 0 64px;
+}
+
+.features h2 {
+  font-size: clamp(28px, 3.4vw, 40px);
+  margin: 0 0 10px;
+}
+
+.section-lead {
+  color: var(--muted);
+  margin: 0 0 26px;
+  max-width: 620px;
+}
+
+.grid {
+  display: grid;
+  gap: 16px;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+}
+
+.style-card h3,
+.pillars h3 {
+  font-size: 19px;
+  margin: 12px 0 6px;
+}
+
+.style-card p,
+.pillars p {
+  color: var(--muted);
+  margin: 0;
+}
+
+.swatch {
+  display: block;
+  height: 46px;
+  border-radius: 10px;
+  border: 1px solid var(--line);
+}
+
+.swatch-glossy {
+  background: linear-gradient(155deg, #3C464D, #14181C 55%, #2A3238);
+}
+
+.swatch-neon {
+  background: linear-gradient(155deg, #1F4A32, #04100A 55%, #3BFF9B);
+}
+
+.swatch-glass {
+  background: linear-gradient(155deg, #2C474D, #0A1417 55%, #59E3B4);
+}
+
+.swatch-eco {
+  background: linear-gradient(155deg, #2E9CA8, #0B1F16 55%, #2FA36A);
+}
+
+.pillars {
+  display: grid;
+  gap: 16px;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  margin-top: 16px;
+}
+
+.pillars h3 {
+  margin-top: 0;
+}
