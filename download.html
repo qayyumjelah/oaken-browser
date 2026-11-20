@@ -1,32 +1,92 @@
+
 <!doctype html>
 <html lang="en">
+
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+
 <title>Downloading Opened</title>
-<meta name="robots" content="noindex">
+
+<meta name="description" content="Your Opened Browser download is starting.">
+<meta name="robots" content="noindex, nofollow">
+<meta name="theme-color" content="#245c3d">
+
 <link rel="icon" href="favicon.ico">
+<link rel="apple-touch-icon" href="icon-180.png">
+
 <link rel="preload" href="manrope.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="stylesheet" href="style.css">
+
 </head>
+
 <body>
+
 <main class="done">
+
   <div class="card">
-    <a href="./"><img src="logo.png" alt="Opened"></a>
+
+    <a href="./" aria-label="Return to Opened homepage">
+      <img src="logo.png" alt="Opened">
+    </a>
+
     <h1>Almost there&hellip;</h1>
-    <p class="lead">Your download of Opened is starting.</p>
+
+    <p class="lead">
+      Your download of Opened is starting.
+    </p>
+
     <ol class="steps">
-      <li><span class="n">1</span>Download Opened</li>
+
+      <li>
+        <span class="n">1</span>
+        <span>Download Opened</span>
+      </li>
+
       <li class="bar" aria-hidden="true"></li>
-      <li><span class="n">2</span>Run OpenedSetup.exe</li>
+
+      <li>
+        <span class="n">2</span>
+        <span>Run OpenedSetup.exe</span>
+      </li>
+
       <li class="bar" aria-hidden="true"></li>
-      <li><span class="n">3</span>Start browsing</li>
+
+      <li>
+        <span class="n">3</span>
+        <span>Start browsing</span>
+      </li>
+
     </ol>
-    <p class="note">If your download didn't start automatically, click <a id="dl" href="https://github.com/qayyumjelah/opened-browser/releases/latest/download/OpenedSetup.exe">here</a>.</p>
+
+    <p class="note">
+      If your download didn't start automatically,
+      <a id="dl" href="https://github.com/qayyumjelah/opened-browser/releases/latest/download/OpenedSetup.exe">
+        click here
+      </a>.
+    </p>
+
+    <noscript>
+      <p class="note">
+        JavaScript is disabled. Please use the download link above.
+      </p>
+    </noscript>
+
   </div>
+
 </main>
+
 <script>
-  setTimeout(function () { location.href = document.getElementById("dl").href; }, 600);
+(function () {
+  const downloadLink = document.getElementById("dl");
+
+  if (!downloadLink) return;
+
+  setTimeout(function () {
+    window.location.href = downloadLink.href;
+  }, 600);
+})();
 </script>
+
 </body>
 </html>
